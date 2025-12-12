@@ -1,5 +1,5 @@
 
-{% extends 'include/hompage.html' %}
+{% extends 'include/homepage.html' %}
 {% load static %}
 {% block content%}
   <div class="page-wrapper"> 
@@ -175,93 +175,7 @@
             </div>
     </section>
 
-    <!--Main Footer-->
-    <footer class="main-footer">
-        <div class="upper-section section-kt">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <!--Footer Col-->
-                    <div class="footer-col info-col col-lg-6 col-md-12 col-sm-12">
-                        <div class="inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                            <div class="content">
-                                <div class="logo"><a href="index.html" title="Restoria - Restaurants HTML Template"><img src="images/logo.png" alt="image" title="Restoria - Restaurants HTML Template"></a></div>
-                                <div class="info">
-                                    <h6>visit us </h6>
-                                    <ul>
-                                        <li>Restoria, Arrondissement, Paris 9578</li>
-                                        <li>Daily - 8.00 am to 10.00 pm</li>
-                                        <li><a href="mailto:booking@domainname.com">booking@gmail.com</a></li>
-                                        <li><a href="tel:+88-123-123456">Booking Request : +88-123-123456</a></li>
-                                        
-                                    </ul>
-                                </div>
-                                <div class="separator"><span> </span> </div>
-                                <div class="newsletter">
-                                    <h4>Our Newsletter</h4>
-                                    <div class="text">Subscribe us & Get 25% Off. Get latest updates.</div>
-                                    <div class="newsletter-form">
-                                        <form method="post" action="index.html">
-                                            <div class="form-group">
-                                                <span class="alt-icon far fa-envelope"></span>
-                                                <input type="email" name="email" value="" placeholder="Your email" required>
-                                                <button type="submit" class="theme-btn btn-style-one clearfix">
-                                                    <span class="btn-wrap">
-                                                        <span class="text-one">subscribe</span>
-                                                        <span class="text-two">subscribe</span>
-                                                    </span>
-                                                </button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Footer Col-->
-                    <div class="footer-col footer-image-col col-lg-3 col-md-6 col-sm-12">
-                        <div class="footer-image">
-                            <img src="images/resource/footer-img-1.jpg" alt="image">
-                        </div>
-                    </div>
-                    <!--Footer Col-->
-                    <div class="footer-col footer-image-col last col-lg-3 col-md-6 col-sm-12">
-                        <div class="footer-image">
-                            <img src="images/resource/footer-img-2.jpg" alt="image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- last footer -->
-        <div class="bottom_footer">
-        <!-- container start -->
-          <div class="auto-container">
-            <!-- row start -->
-            <div class="row clearfix">
-              <div class="col-lg-4 col-md-4 col-sm-12">
-                  <p>© 2025 All Rights Reserved</p>
-              </div>
-
-              <div class="col-lg-4 col-md-4 col-sm-12">
-                <ul class="social_media">
-                  <li><a href="https://themeforest.net/user/kalanidhithemes/portfolio" aria-label="facebook page" ><i class="fa-brands fa-facebook-f"></i></a></li>
-                  <li><a href="https://www.behance.net/kalanidhithemes" aria-label="twitter page"><i class="fa-brands fa-instagram"></i></a></li>
-                  <li><a href="https://themeforest.net/user/kalanidhithemes/portfolio" aria-label="instagram page"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                  <li><a href="https://themeforest.net/user/kalanidhithemes/portfolio" aria-label="pinterest page"><i class="fa-brands fa-youtube"></i></a></li>
-                </ul>
-              </div>
-
-              <div class="col-lg-4 col-md-4 col-sm-12">
-                  <p class="developer_text">Crafted by <a href="https://themeforest.net/user/kalanidhithemes/portfolio" target="blank">Kalanidhi Themes</a></p>
-              </div>
-            </div>
-          <!-- row end -->
-          </div>
-          <!-- container end -->
-        </div>
-    </footer>
-
+    {% include 'include/footer.html' %}
 </div>
 <!--End pagewrapper--> 
 

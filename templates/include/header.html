@@ -50,23 +50,6 @@
                     <ul class="navigation clearfix">
                       <li class="dropdown current">
                         <a href="{% url 'index-page' %}">Главная страница</a>
-                        <ul>
-                          <li>
-                            <a href="{% url 'index-page' %}">Home 1 - Minimal Hero</a>
-                          </li>
-                          <li>
-                            <a href="../Restoria-2-Standard-Hero/index.html">Home 2 - Standard Hero</a>
-                          </li>
-                          <li>
-                            <a href="index.html">Home 3 - Video Hero</a>
-                          </li>
-                          <li>
-                            <a href="../Restoria-4-Category-Hero/index.html">Home 4 - Category Hero</a>
-                          </li>
-                          <li>
-                            <a href="../Restoria-5-Rollingimages-Hero-Center-Header/index.html">Home 5 - Rolling Images</a>
-                          </li>
-                        </ul>
                       </li>
                       <li class="dropdown has-mega-menu">
                         <a href="menu-list.html">Меню</a>
@@ -124,7 +107,7 @@
                         </ul>
                       </li>
                       <li>
-                        <a href="about.html">О нас</a>
+                        <a href="{% url 'about-page' %}">О нас</a>
                       </li>
                       <li>
                         <a href="our-chef.html">Наши повара</a>
@@ -327,3 +310,4 @@
         </div>
         <!-- / Hidden Bar Wrapper -->
       </section>
+

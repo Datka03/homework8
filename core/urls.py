@@ -19,18 +19,20 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 
-from apps.settings.views import index, contact, about, gallery, book_table, blog_list, blog_detail, menu_list, our_chef
+from apps.settings.views import (
+    index, contact, about, gallery_masonry,
+    book_table, book_table_option2, blog_single_post, blog_list, menu
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index-page"),
-    path('contacts/', contact, name="contact-page"),
+    path('contact/', contact, name="contact-page"),
     path('about/', about, name="about-page"),
-    path('gallery/', gallery, name="gallery-page"),
+    path('gallery-masonry/', gallery_masonry, name="gallery-page"),
     path('book-table/', book_table, name="book-table-page"),
-    path('blog/', blog_list, name="blog-list-page"),
-    path('blog-deteils/', blog_detail, name="blog-detail-page"),
-    path('menu/', menu_list, name="menu-page"),
-    path('chef/', our_chef, name="chef-page"),
+    path('book-table-option2/', book_table_option2, name="book-table-option2-page"),
+    path('blog-single-post/', blog_single_post, name="blog-detail-page"),
+    path('blog-list/', blog_list, name="blog-list-page"),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
